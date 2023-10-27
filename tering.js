@@ -1,14 +1,8 @@
-function random255() {
-    return Math.round(Math.random() * 255);
-  }
-  
-  function setRandomColor() {
-    let r = random255();
-    let g = random255();
-    let b = random255();
-    let color = `rgb(${r}, ${g}, ${b})`;
-  
-    let element = document.body;
-  
-    element.style.backgroundColor = color;
-}
+const barrelRollButton = document.getElementById('barrelRollButton');
+let rotation = 0;
+
+barrelRollButton.addEventListener('click', () => {
+    rotation += 360;
+    document.body.style.transition = 'transform 2s';
+    document.body.style.transform = `rotate(${rotation}deg)`;
+});
