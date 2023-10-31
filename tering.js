@@ -1,5 +1,5 @@
 const barrelRollButton = document.getElementById('barrelRollButton');
-let rotation = 0;
+let rotation = 360;
 
 barrelRollButton.addEventListener('click', () => {
     rotation += 360;

@@ -1,126 +1,64 @@
-/* style.css */
 body {
-  background-image: url('assets/sekiro.jpg');
-font-family: Arial, sans-serif;
-background-color: #808080;
-margin: 0;
-padding: 5;
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.profile {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 300px;
+  background-color: #222; /* Dark gray background for profile box */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make the profile picture round */
+  margin: 0 auto 10px;
+  display: block;
 }
 
 h1 {
-color: #121212;
+  font-size: 24px;
+  margin-bottom: -15px;
 }
 
 p {
-color: #121212;
+  color: grey;
 }
 
-#nameText {
-    background-color: #5c5e94;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    margin-left: 17px;
+#pronouns {
+  font-size: 13px;
+  color: grey;
 }
 
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    padding-bottom: 30px;
-    background-color: #222222;
-    color: #ffffff;
-    padding-bottom: 16px;
+#wipnote {
+  margin-bottom: 1px;
 }
 
-/* #division0 {
-background-color: #7779be;
-text-align: center;
-} */
-
-.normalSection {
-background-color: #5c5e94;
-justify-content: center;
-text-align: center;
-box-shadow: 3px 3px #121212;
-border-color: #000000;
-border: 2px solid #121212;
-padding: 10px;
-margin-top: 15px;
-margin-left: auto;
-margin-right: auto;
-width: 400px;
+.social-media {
+  margin-top: 20px;
 }
 
-button {
-display: inline-block;
-padding: 15px 25px;
-font-size: 24px;
-cursor: pointer;
-text-align: left;
-text-decoration: none;
-outline: #4a4a4a;
-color: #fff;
-background-color: #5f5f5f;
-border: none;
-border-radius: 15px;
-box-shadow: 0 6px #3d3d3d;
-transition: 0.2s;
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
 }
 
-button:hover {background-color: #3e8e41}
-
-button:active {
-background-color: #3e8e41;
-box-shadow: 0 5px #666;
-transform: translateY(5px);
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Make social media icons round */
 }
 
-#download {
-  margin-bottom: 15px;
-}
-
-#download:active {
-  transform: translateY(-1000px);
-}
-
-#socialDivWrapper {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  width: 350px;
-}
-
-.socialDiv {
-  background-color: #5c5e94;
-  border: none;
-  box-shadow: none;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.socialButton {
-  width: 150px;
-  text-align: center;
-}
-
-#WIPnote {
-  margin-bottom: 15px;
-}
-
-footer {
-  text-align: center;
-  }
-
-#footerSec {
-  background-color: #5c5e94;
-  border: 2px solid #000000;
-  box-shadow: 3px 3px #000000;
-  width: 130px;
-  margin-top: 15px;
-  margin: auto auto 20px;
+a.social-icon:hover {
+  filter: brightness(1.2); /* Add hover effect to social media icons */
+  transition: 0.5s;
 }

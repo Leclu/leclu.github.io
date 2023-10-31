@@ -1,62 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>webbed site of Leclu :D</title>
-    <link rel="icon" href="img/image.png" type="image/icon type">
     <meta charset="UTF-8">
-    <meta name="description" content="Site of Leclu, where I put my socials and game accounts, plus links to them!!">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Steam, Dutch, Discord, Twitter, Instagram, Leclu, Lecluu, SleepyLeclu">
-    <meta name="author" content="Leclu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tering.css">
+    <title>Leclu.</title>
+    <script src="tering.js"></script> 
 </head>
 <body>
-    <header id="header">
-        <h1 id="nameText">Leclu.</h1>
-        <button id="barrelRollButton" onclick="barrelRollButton()">Do A Silly</button>
-        <script src="tering.js"></script>
-    </header>
-
-<section class="normalSection">
-  <h1>This is a Leclu.</h1>
-  <p><b>You wouldn't download a Leclu... right?</b></p>
-  <button id="download">DOWNLOAD</button>
-</section>
-
-<section class="normalSection">
-  <h1>Socials</h1>
-  <div id="socialDivWrapper">
-    <div class="socialDiv">
-      <a href="https://steamcommunity.com/id/Leclu" target="_blank"><button class="socialButton">Steam</button></a>
-      <a href="https://discord.com/users/378845802656956416" target="_blank"><button class="socialButton">Discord</button></a>
-      <a href="https://x.com/sleepyleclu" target="_blank"><button class="socialButton">Twitter</button></a>
-      <a href="https://GitHub.com/Leclu" target="_blank"><button class="socialButton">GitHub</button></a>
+    <div class="profile">
+        <img src="img/leclu.jpg" alt="Profile Picture" onclick="barrelRollButton()" role="button">
+        <h1><b>Leclu</b></h1>
+        <p id="pronouns">They/Them</p>
+        <div class="social-media">
+            <a href="https://steamcommunity.com/id/Leclu" target="_blank" class="social-icon">
+                <img src="assets/steamlogo.png" alt="Steam">
+            </a>
+            <a href="discord.com/users/378845802656956416" target="_blank" class="social-icon">
+                <img src="assets/discordlogo.png" alt="Discord">
+            </a>
+            <a href="https://github.com/Leclu" target="_blank" class="social-icon">
+                <img src="assets/githublogo.png" alt="GitHub">
+            </a>
+            <!-- Add more social media links as needed -->
+        </div>
     </div>
-  </div>
-</section>
 
-<section class="normalSection">
-  <h1>PC Specifications</h1>
-  <div id="socialDivWrapper">
-    <ul class="no-bullet">
-      <li><em>cpu:</em> AMD Ryzen 5 5600X</li>
-      <li><em>gpu:</em> AMD Radeon RX 6600</li>
-      <li><em>ram:</em> 2x8GB DDR4 3200 MHz</li>
-      <li><em>mobo:</em> ASUS TUF B550 Wifi 2</li>
-      <li><em>ssd:</em> SAMSUNG EVO 980 1TB</li>
-    </ul>
-  </div>
-</section>
-
-<section class="normalSection" id="WIPnote">
-  <h1>THIS SITE IS A W.I.P</h1>
-  <p>Please don't expect much from it, yet.</p>
-</section>
-
+    <div class="profile">
+        <h1 id="wipnote">This website is a WIP.</h1>
+        <p>Thank you for being patient.</p>
+    </div>
 </body>
 <footer>
-  <section id="footerSec">
-    <p><i><b>&copy; Leclu, 2023-2024</b></i></p>
-  </section>
+    <p>&copy;Leclu</p>
 </footer>
 </html>
