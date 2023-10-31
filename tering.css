@@ -44,6 +44,10 @@ p {
   color: grey;
 }
 
+#hours {
+  margin-top: -12px;
+}
+
 #wipnote {
   margin-bottom: 1px;
 }
