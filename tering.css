@@ -1,6 +1,7 @@
 body {
   background-image: url('assets/background.png');
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: #000; /* Black background color */
   color: #fff; /* White text color */
   text-align: center;
