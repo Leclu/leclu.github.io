@@ -69,9 +69,10 @@ p {
 
 .social-icon {
   display: inline-block;
-  margin: 0 10px;
+  margin: 1rem;
   width: 30px;
   height: 30px;
+  filter: grayscale(60%);
 }
 
 .social-icon img {
@@ -83,4 +84,13 @@ p {
 a.social-icon:hover {
   filter: brightness(1.2); /* Add hover effect to social media icons */
   transition: 0.5s;
+  animation: spin-animation 0.5s;
+}
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
