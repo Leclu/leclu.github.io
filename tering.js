@@ -1,4 +1,3 @@
-// Get references to the button and the hidden division
 var toggleButton = document.getElementById("toggleButton");
 var hiddenDivision = document.getElementById("hiddenDivision");
 

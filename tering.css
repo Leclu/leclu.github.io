@@ -1,8 +1,9 @@
+html {
+  animation: ease;
+}
+
 body {
-  background-image: url('assets/background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #000; /* Black background color */
+  background-color: #131313; /* Black background color */
   color: #fff; /* White text color */
   text-align: center;
   font-family: Arial, sans-serif;
@@ -16,6 +17,14 @@ body {
   background-color: #222; /* Dark gray background for profile box */
   padding: 20px;
   border-radius: 10px;
+}
+
+#profilepicture {
+  margin: 25px auto 0px;
+}
+
+#profilepicture:hover {
+  animation: swing 0.8s;
 }
 
 img {
@@ -69,28 +78,79 @@ p {
 
 .social-icon {
   display: inline-block;
-  margin: 1rem;
+  margin: 0.6rem;
   width: 30px;
   height: 30px;
-  filter: grayscale(60%);
 }
 
 .social-icon img {
   width: 100%;
   height: 100%;
-  border-radius: 50%; /* Make social media icons round */
+  border-radius: 50%;
 }
 
 a.social-icon:hover {
-  filter: brightness(1.2); /* Add hover effect to social media icons */
+  filter: brightness(1.2);
   transition: 0.5s;
-  animation: spin-animation 0.5s;
+  animation: swing 0.8s;
 }
-@keyframes spin-animation {
-  0% {
-    transform: rotate(0deg);
+
+@-webkit-keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
   }
   100% {
-    transform: rotate(359deg);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
   }
+}
+@keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+.swing:hover
+{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
