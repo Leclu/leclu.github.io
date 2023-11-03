@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 17px;
   color: #c2c2c2;
+  margin-top: 5%;
 }
 
 p {
@@ -56,6 +57,10 @@ p {
 
 #wipnote {
   margin-bottom: 1px;
+}
+
+#divider {
+  max-width: 80%;
 }
 
 .social-media {
