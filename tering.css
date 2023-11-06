@@ -10,6 +10,43 @@ body {
   padding: 20px;
 }
 
+.collapsible {
+  background-color: #222;
+  color: #fff;
+  cursor: default;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  max-width: 440px;
+  border-radius: 10px
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  transition: 0.5s;
+}
+
+.collapsible:after {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+}
+
+.content {
+  background-color: #363636;
+  margin: 0px auto 15px;
+  max-width: 405px;
+  background-color: #222; /* Dark gray background for profile box */
+  padding: 40px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: max-height 0.2s ease-out;
+}
+
 .profile {
   margin: 0 auto;
   margin-bottom: 15px;
@@ -30,9 +67,14 @@ body {
 img {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Make the profile picture round */
+  border-radius: 50%;
   margin: 0 auto 10px;
   display: block;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px;
 }
 
 h1 {
@@ -80,7 +122,7 @@ p {
 
 .social-icon {
   display: inline-block;
-  margin: 0.6rem;
+  margin: 0.2rem 1.3rem;
   width: 30px;
   height: 30px;
 }
@@ -91,8 +133,7 @@ p {
   border-radius: 50%;
 }
 
-a.social-icon:hover {
-  filter: brightness(1.2);
+a.social-icon img:hover {
   transition: 0.5s;
   animation: rotation 0.5s;
 }
@@ -105,31 +146,3 @@ a.social-icon:hover {
     transform: rotate(360deg);
   }
 }
-
-/*animation for collapsible*/
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-
