@@ -1,10 +1,14 @@
-var toggleButton = document.getElementById("toggleButton");
-var hiddenDivision = document.getElementById("hiddenDivision");
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-toggleButton.addEventListener("click", function() {
-    if (hiddenDivision.style.display === "none") {
-        hiddenDivision.style.display = "block";
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
     } else {
-        hiddenDivision.style.display = "none";
-    }
-});
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
