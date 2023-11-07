@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
+  animation: poepoe 0.5s infinite;
 }
 
 .collapsible {
@@ -23,9 +24,13 @@ body {
   border-radius: 10px
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.collapsible:hover {
+  background-color: #333;
   transition: 0.5s;
+}
+.active {
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
 }
 
 .collapsible:after {
@@ -37,13 +42,13 @@ body {
 .content {
   background-color: #363636;
   margin: 0px auto 15px;
-  max-width: 405px;
+  max-width: 404px;
   background-color: #222; /* Dark gray background for profile box */
   padding: 40px;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   transition: max-height 0.2s ease-out;
 }
 
@@ -61,7 +66,7 @@ body {
 }
 
 #profilepicture:hover {
-  animation: rotation 0.5s;
+  animation: rotation 0.5s ;
 }
 
 img {
@@ -139,10 +144,10 @@ a.social-icon img:hover {
 }
 
 @keyframes rotation {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
