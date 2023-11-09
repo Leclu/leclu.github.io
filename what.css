@@ -56,8 +56,7 @@ p {
 }
 
 .collapsible:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
+  animation: boing 0.5s infinite;
 }
 
 .collapsible:active {
@@ -176,7 +175,7 @@ a.social-icon img:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: translateY(-4px);
   }
   100% {
     transform: scale(1);
