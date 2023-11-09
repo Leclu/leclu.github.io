@@ -12,3 +12,14 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+function doSomething () {
+  // (A) DISABLE THE BUTTON
+  document.getElementById("myButton").disabled = true;
+
+  // (B) DO YOUR PROCESSING HERE
+  alert("Something is done!");
+
+  // (C) RE-ENABLE AFTER PROCESSING IF YOU WANT
+  // document.getElementById("myButton").disabled = false;
+}

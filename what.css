@@ -1,5 +1,8 @@
 body {
-  background-color: #131313; /* Black background color */
+  background-image: url(assets/firelink.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff; /* White text color */
   text-align: center;
   font-family: Arial, sans-serif;
@@ -44,12 +47,17 @@ p {
   text-align: center;
   font-size: 15px;
   max-width: 440px;
-  border-radius: 10px;
+  background: rgba(39, 37, 37, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgb(115, 112, 112);
 }
 
 .collapsible:hover {
-  background-color: #333;
-  transition: 0.5s;
+  transform: scale(1.03);
+  transition: 0.3s;
 }
 
 .collapsible:active {
@@ -73,6 +81,10 @@ p {
   overflow: hidden;
   border-radius: 0px 0px 10px 10px;
   transition: max-height 0.2s ease-in-out;
+  background: rgba(39, 37, 37, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .profile {
@@ -81,7 +93,12 @@ p {
   max-width: 400px;
   background-color: #222;
   padding: 20px;
-  border-radius: 10px;
+  background: rgba(39, 37, 37, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgb(115, 112, 112);
 }
 
 .social-media {
@@ -103,7 +120,7 @@ p {
 
 a.social-icon img:hover {
   transition: 0.5s;
-  animation: rotation 0.5s;
+  animation: rotato 0.5s;
 }
 
 #begin {
@@ -127,10 +144,11 @@ a.social-icon img:hover {
 
 #profilepicture {
   margin: 5px auto 0px;
+  border: solid 2.5px rgb(115, 112, 112);
 }
 
 #profilepicture:hover {
-  animation: rotation 0.5s ;
+  animation: rotato 0.5s;
 }
 
 #pronouns {
@@ -153,7 +171,19 @@ a.social-icon img:hover {
   margin: auto auto;
 }
 
-@keyframes rotation {
+@keyframes boing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotato {
   0% {
     transform: rotate(0deg);
   }
