@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: url(assets/font/OptimusPrinceps.ttf);
+}
+
 body {
-  background-image: url(assets/firelink.jpg);
+  background-image: url(assets/img/firelink.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -15,12 +20,15 @@ html {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 30px;
   margin: 10px;
+  font-family: OptimusPrinceps;
+  font-style: oblique;
 }
 
 h2 {
   font-size: 17px;
+  font-family: OptimusPrinceps;
   color: #c2c2c2;
   margin: 0.7rem;
 }
@@ -35,6 +43,7 @@ img {
 
 p {
   color: grey;
+  font-family: OptimusPrinceps;
 }
 
 .collapsible {
