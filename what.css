@@ -11,8 +11,7 @@ body {
   color: #fff; /* White text color */
   text-align: center;
   font-family: Arial, sans-serif;
-  padding: 20px;
-  animation: poepoe 1ms infinite;
+  padding: 1.25rem;
 }
 
 html {
@@ -20,24 +19,24 @@ html {
 }
 
 h1 {
-  font-size: 30px;
-  margin: 10px;
+  font-size: 1.875rem;
+  margin: 0.625rem;
   font-family: OptimusPrinceps;
   font-style: oblique;
 }
 
 h2 {
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: OptimusPrinceps;
   color: #c2c2c2;
   margin: 0.7rem;
 }
 
 img {
-  width: 150px;
-  height: 150px;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
-  margin: 0 auto 10px;
+  margin: 0 auto 1rem;
   display: block;
 }
 
@@ -54,14 +53,14 @@ p {
   width: 100%;
   border: none;
   text-align: center;
-  font-size: 15px;
-  max-width: 440px;
+  font-size: 0.938rem;
+  max-width: 27.5rem;
   background: rgba(39, 37, 37, 0.8);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border: 1px solid rgb(115, 112, 112);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.438rem);
+  -webkit-backdrop-filter: blur(0.438rem);
+  border: 0.063rem solid rgb(115, 112, 112);
 }
 
 .collapsible:hover {
@@ -69,44 +68,44 @@ p {
 }
 
 .collapsible:active {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
   transition: border-radius 0.1s ease-in-out;
 }
 
 .active {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
   transition: border-radius 0.1s ease-in-out;
 }
 
 .content {
   background-color: #363636;
-  margin: 0px auto 15px;
-  max-width: 404px;
+  margin: 0rem auto 0.938rem;
+  max-width: 25.25rem;
   background-color: #222;
-  padding: 40px;
-  padding: 0 18px;
+  padding: 2.5rem;
+  padding: 0 1.125rem;
   max-height: 0;
   overflow: hidden;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0rem 0rem 0.625rem 0.625rem;
   transition: max-height 0.2s ease-in-out;
   background: rgba(39, 37, 37, 0.9);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.438rem);
+  -webkit-backdrop-filter: blur(0.438rem);
 }
 
 .profile {
   margin: 0 auto;
-  margin-bottom: 15px;
-  max-width: 400px;
+  margin-bottom: 0.938rem;
+  max-width: 25rem;
   background-color: #222;
-  padding: 20px;
+  padding: 1.25rem;
   background: rgba(39, 37, 37, 0.8);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border: 1px solid rgb(115, 112, 112);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.438rem);
+  -webkit-backdrop-filter: blur(0.438rem);
+  border: 0.063rem solid rgb(115, 112, 112);
 }
 
 .social-media {
@@ -115,9 +114,9 @@ p {
 
 .social-icon {
   display: inline-block;
-  margin: 0.2rem 1.3rem;
-  width: 35px;
-  height: 35px;
+  margin: 0.2rem 1rem;
+  width: 2.188rem;
+  height: 2.188rem;
 }
 
 .social-icon img {
