@@ -60,3 +60,9 @@ button:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
 }
+
+@media (max-width: 1080px) {
+    body {
+      max-width: 100%;
+    }
+}
