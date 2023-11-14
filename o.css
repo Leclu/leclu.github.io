@@ -54,14 +54,8 @@ button:hover {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1366px) {
     body {
-      height: 100vh;
-      width: 100vw;
+        max-width: 90%;
     }
-  
-    html {
-      height: 100vh;
-      width: 100vw;
-    }
-  }
+}
