@@ -8,19 +8,8 @@ body {
 	padding: 4rem
 }
 
-.header {
-    display: inline-block;
-}
-
-.header h1 {
-    margin-left: 2rem;
-}
-
-.header {
-    margin-right: 1rem;
-}
-.wrapper {
-    display: inline-table;
+.header img {
+    margin: -3.5rem;
 }
 
 p {
