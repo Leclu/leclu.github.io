@@ -1,5 +1,6 @@
 body {
-    background-color: #e8e8d8;
+    background-color: rgb(10, 11, 27);
+    color: rgb(191, 175, 226);
     text-align: center;
     max-width: 40%;
     margin: auto auto;
@@ -17,7 +18,7 @@ p {
 }
 
 h2 {
-    color: #666;
+    color: #acacac;
     font-size: large;
     text-align: center;
 }
@@ -29,7 +30,7 @@ img {
 }
 
 button {
-    background-color: #e8e8d8;
+    background-color: rgb(191, 175, 226);
     margin: 0 1rem 2rem;
     border: 2px outset;
     outline: none;
