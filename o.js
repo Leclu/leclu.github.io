@@ -1,20 +1,14 @@
-$(".error").draggable();
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-var error = '<div class="error">' + $('.error').html() + '</div>',
-x = window.innerWidth / 3.
-y = window.innerHeight / 3;
-
-
-$('body').on('click', '.ok', '.close-button', function(){
-    $('body').append(error);
-    $('.error').last().css({ top: y + 'px', left: x + 'px'}).draggable();
-
-    x+=4;
-    y+=4;
-});
-
-$(document).ready(function(){
-    $(".start-btn").click(function(){
-    $('.start-menu-win').toggleClass('active-menu');
-    })
-})
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}

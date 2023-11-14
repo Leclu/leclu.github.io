@@ -29,11 +29,34 @@ button:hover {
     background-color: #d3d3c3;
 }
 .pfp {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     margin: -2.5rem;
 }
 .speclist {
     text-align: center;
     margin: 0 auto;
+}
+
+.collapsible {
+    background-color: #e8e8d8;
+    margin: 0 1rem 2rem;
+    box-shadow: #666 #666 #666;
+    cursor: default;
+    padding: 0 1.5rem;
+}
+  
+.collapsible:hover {
+    background-color: #d3d3c3;
+}
+  
+.content {
+
+    margin: 0px auto 15px;
+    background-color: #e8e8d8;
+    padding: 40px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
 }
