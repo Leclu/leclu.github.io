@@ -1,7 +1,7 @@
 body {
     background-color: #e8e8d8;
     text-align: center;
-    max-width: 40.625rem;
+    max-width: 40%;
     margin: auto auto;
 	line-height: 1.6;
 	font-size: 1.125rem;
@@ -56,6 +56,12 @@ button:hover {
 
 @media screen and (max-width: 1366px) {
     body {
+        background-color: #e8e8d8;
+        text-align: center;
         max-width: 90%;
+        margin: auto auto;
+	    line-height: 1.6;
+	    font-size: 1.125rem;
+	    padding: 4rem 2rem
     }
 }
