@@ -69,6 +69,5 @@ button:hover {
     html {
       height: 100vh;
       width: 100vw;
-      position: fixed;
     }
   }
