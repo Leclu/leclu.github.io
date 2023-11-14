@@ -55,6 +55,11 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+      height: 100vh;
+      width: 100vw;
+    }
+  
     html {
       height: 100vh;
       width: 100vw;
