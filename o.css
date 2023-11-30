@@ -84,5 +84,8 @@ footer {
 	    font-size: 1.125rem;
 	    padding: 4rem 2rem
     }
+    p {
+        text-align: left;
+    }
 }
   
