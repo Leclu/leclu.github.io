@@ -1,7 +1,11 @@
 @font-face {
     font-family: 'Hack';
-    src:  url(assets/font/Hack-Regular.ttf),
-          url(assets/font/Hack-Bold.ttf);
+    src:  url(assets/font/Hack-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'HackBold';
+    src: url(assets/font/Hack-Bold.ttf);
 }
 
 body {
@@ -18,13 +22,16 @@ body {
 }
 
 .header img {
-    margin: -2rem 1rem;
+    margin: -3rem 0rem -1.5rem;
 }
 
 p {
     text-align: justify;
 }
 
+h1 {
+    font-family: 'HackBold';
+}
 h2 {
     color: #979797;
     font-size: large;
