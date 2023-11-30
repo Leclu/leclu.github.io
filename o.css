@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Hack';
+    src:  url(assets/font/Hack-Regular.ttf),
+          url(assets/font/Hack-Bold.ttf);
+}
+
 body {
     background-color: #111214;
     color: #cacaca;
@@ -8,10 +14,11 @@ body {
 	line-height: 1.6;
 	font-size: 1.125rem;
 	padding: 4rem;
+    font-family: 'Hack';
 }
 
 .header img {
-    margin: -2.2rem;
+    margin: -2rem 1rem;
 }
 
 p {
@@ -52,19 +59,18 @@ button:hover {
     margin: -2.5rem;
 }
 
-.speclist {
+#socialwrapper {
     text-align: center;
-    margin: 0 auto;
 }
 
 footer {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1366px) {
     body {
         background-color: #111214;
-        text-align: center;
+        text-align: left;
         max-width: 90%;
         margin: auto auto;
 	    line-height: 1.6;
