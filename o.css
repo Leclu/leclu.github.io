@@ -25,8 +25,14 @@ body {
     margin: -1.3rem;
 }
 
+a {
+    color: #5f55f3;
+    font-style: italic;
+    text-decoration: wavy;
+}
+
 p {
-    text-align: justify;
+    text-align: center;
 }
 
 h1 {
