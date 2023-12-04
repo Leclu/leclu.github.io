@@ -7,7 +7,8 @@
   <meta property="og:title" content="Leclu's Webbed Site" />
   <meta property="og:description" content="mmmrrrp~ <3" />
   <meta property="og:url" content="https://leclu.zip" />
-  <meta property="og:image" content="/assets/img/leclu.png" />
+  <meta property="og:image" content="assets/img/leclu.png" />
+  <link rel="icon" type="image/x-icon" href="assets/img/leclu.png" />
 <style>
 body {
   font-family: 'SF Mono', 'Courier New', Courier, monospace;
@@ -133,7 +134,7 @@ a {
             output.insertAdjacentHTML('beforeend', '<br>');
             resolve();
           }
-        }, 1);
+        }, 0.2);
       });
     }
 
@@ -160,18 +161,6 @@ a {
         case 'aboutme':
           await printOutput('I am Leclu, and I have a computer.')
           break;
-        case 'catboy':
-          await printOutput('~ I am Leclu, a snuggly catboy from the Netherlands! :3');
-          await printOutput('')
-          await printOutput('~ I am often found tugging and fidgeting with PC hardware, or writing HTML, CSS or JavaScript')
-          await printOutput("~ I love learning more about programming language and I'm currently taking a shot at Java, of all things.")
-          await printOutput('')
-          await printOutput('~ Aside from tech-related things, I love to play games such as Dark Souls, or Breath of the Wild!')
-          await printOutput('')
-          await printOutput('~ I also loooove cuddles~')
-          await printOutput('~ PM me on Discord for stuff like that <3')
-          await output.insertAdjacentHTML('beforeend', '~ <a href="https://discord.com">My Discord</a><br>');
-          break;
         case 'specs':
           await printOutput('- Mobo: ASUS TUF B550 Gaming Wifi II');
           await printOutput('- CPU: AMD Ryzen 5 5600X @ 4.2GHz');
@@ -197,30 +186,62 @@ a {
           output.insertAdjacentHTML('beforeend', '~ <a href="https://github.com/Leclu" target="_blank">GitHub</a><br>');
           break;
         case 'neofetch':
-          await printOutput('........,.=:!!t3Z3z.,..................Leclu@mediumfridge')
-          await printOutput('.......:tt:::tt333EE3..................------------------')
-          await printOutput('.......Et:::ztt33EEEL @Ee.,........,...OS: Windows 11 Leclu Edition x86_64')
-          await printOutput('......;tt:::tt333EE7 ;EEEEEEttttt33#...Host: Leclu :3')
-          await printOutput('.....:Et:::zt333EEQ. $EEEEEttttt33QL...Kernel: 10.0.23585')
-          await printOutput('.....it::::tt333EEF @EEEEEEttttt33F....Uptime: 1 day, 14 hours, 13 mins')
-          await printOutput('....;3=*^```"*4EEV :EEEEEEttttt33@.....Packages: 69 (scoop)')
-          await printOutput('....,.=::::!t=., ` @EEEEEEtttz33QF.....Shell: bash 5.2.15')
-          await printOutput('...;::::::::zt33). ."4EEEtttji3P*......Resolution: 2560x1440')
-          await printOutput('..:t::::::::tt33.:Z3z..  `` ,..g.......DE: Aero')
-          await printOutput('..i::::::::zt33F AEEEtttt::::ztF.......WM: Explorer')
-          await printOutput('.;:::::::::t33V ;EEEttttt::::t3........WM Theme: Custom')
-          await printOutput('.E::::::::zt33L @EEEtttt::::z3F........Terminal: Windows Terminal')
-          await printOutput('{3=*^```"*4E3) ;EEEtttt:::::tZ`........CPU: AMD Ryzen 7 5800H with Radeon Graphics (16) @ 3.200GHz')
-          await printOutput('...............:EEEEtttt::::z7.........GPU: Caption')
-          await printOutput('................."VEzjt:;;z>*`.........GPU: NVIDIA GeForce RTX 3070 Laptop GPU')
-          await printOutput('.......................................Memory: 10054MiB / 16236MiB')
+          await printOutput('........,.=:!!t3Z3z.,..................Leclu@mediumfridge');
+          await printOutput('.......:tt:::tt333EE3..................------------------');
+          await printOutput('.......Et:::ztt33EEEL @Ee.,........,...OS: Windows 11 Leclu Edition x86_64');
+          await printOutput('......;tt:::tt333EE7 ;EEEEEEttttt33#...Host: Leclu :3');
+          await printOutput('.....:Et:::zt333EEQ. $EEEEEttttt33QL...Kernel: 10.0.23585');
+          await printOutput('.....it::::tt333EEF @EEEEEEttttt33F....Uptime: 1 day, 14 hours, 13 mins');
+          await printOutput('....;3=*^```"*4EEV :EEEEEEttttt33@.....Packages: 69 (scoop)');
+          await printOutput('....,.=::::!t=., ` @EEEEEEtttz33QF.....Shell: bash 5.2.15');
+          await printOutput('...;::::::::zt33). ."4EEEtttji3P*......Resolution: 2560x1440');
+          await printOutput('..:t::::::::tt33.:Z3z..  `` ,..g.......DE: Aero');
+          await printOutput('..i::::::::zt33F AEEEtttt::::ztF.......WM: Explorer');
+          await printOutput('.;:::::::::t33V ;EEEttttt::::t3........WM Theme: Custom');
+          await printOutput('.E::::::::zt33L @EEEtttt::::z3F........Terminal: Windows Terminal');
+          await printOutput('{3=*^```"*4E3) ;EEEtttt:::::tZ`........CPU: AMD Ryzen 7 5800H with Radeon Graphics (16) @ 3.200GHz');
+          await printOutput('...............:EEEEtttt::::z7.........GPU: Caption');
+          await printOutput('................."VEzjt:;;z>*`.........GPU: NVIDIA GeForce RTX 3070 Laptop GPU');
+          await printOutput('.......................................Memory: 10054MiB / 16236MiB');
+          break;
+        case 'leclu':
+          await printOutput('........................ @@@@& .................................................')
+          await printOutput('...................... @@@@@@@@ ................................................')
+          await printOutput('.................... %@@@@@@@@@@ ...............................................')
+          await printOutput('................... @@@@@@@@@@@@/ ..............................................')
+          await printOutput('.................. @@@@@@@@@@@@@@ ..............................................')
+          await printOutput('................. @@@@@@@@@@@@@@@ .............................. .#*. ..........')
+          await printOutput('................ &@@@@@@@@@@@@@@@, ........................ ,@@@@@@@% ..........')
+          await printOutput('................ @@@@@@@@@@@@@@@@@ ..................... @@@@@@@@@@@@ ..........')
+          await printOutput('............... @@@@@@@@@@@@@@@@@@ ................. (@@@@@@@@@@@@@@@ ..........')
+          await printOutput('.............. #@@@@@@@@@@@@@@@@@@. ............. &@@@@@@@@@@@@@@@@@@ ..........')
+          await printOutput('.............. @@@@@@@@@@@@@@@@@@@#@@@@@@@@%. .&@@@@@@@@@@@@@@@@@@@@% ..........')
+          await printOutput('.............. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@* ..........')
+          await printOutput('............. #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ...........')
+          await printOutput('............. #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ...........')
+          await printOutput('............. #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@, ...........')
+          await printOutput('............. /@@@@@@@@@@%#####@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ............')
+          await printOutput('.............. @@@@@@@@##(######%@@@@@@@@@@@@@@@#*/*#@@@@@@@@@@@@@ .............')
+          await printOutput('.............. @@@@@@@###########@@@@@@@@@@@@@%/******/@@@@@@@@@@ ..............')
+          await printOutput('............ @@@@@@@@###########@@@@@@@@@@@@@@*********%@@@@@@@@@ ..............')
+          await printOutput('......... @@@@@@@@@@@##########&@@@@@@@@@@@@@#*********#@@@@@@@@ ...............')
+          await printOutput('....... @@@@@@@@@@@@@#########@@@@@@@@@@@@@@@#*********@@@@@@@@@@ ..............')
+          await printOutput('........ @@@@@@@@@@@@@###(##@@@@@@@@@@@@@@@@@@******/*@@@@@@@@@@@@@ ............')
+          await printOutput('.......... (@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%***/@@@@@@@@@@@@@@@& ...........')
+          await printOutput('............. #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@& ..............')
+          await printOutput('................. #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@* ..................')
+          await printOutput('....................... *@@@@@@@@@@@@@@@@@@@@&&#* ..............................')
+          await printOutput('')
+          await printOutput('...............................@@%%@@@@@@@@@@@@@@@@@@@@& .......................')
+          await printOutput('............................ %@@@@@@@@@@@@@@@@@@@@@@@@@@@* .....................')
+          await printOutput('............................ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ....................')
           break;
         case 'cat':
           await printOutput('//\\_//\\'); 
           await printOutput('( oωo )') 
           await printOutput('>  _^_ <');
-          await printOutput('')
-          await printOutput('Meow!')
+          await printOutput('');
+          await printOutput('Meow!');
           break;
         case 'meow':
         case 'meoww':
